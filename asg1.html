@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body onload="main()">
+   <canvas id="asg1" width="400" height="400" style="border:1px solid #000000;">
+      Please use a browser that supports "canvas"
+   </canvas>
+
+
+   <br>
+   <button type="button" id ="clear">Clear Canvas</button>
+   <br><br>
+   <label for="v1">Drawing Mode:</label>
+   <br>
+   <button type="button" id ="square">Squares</button>
+   <button type="button" id ="triangle">Triangles</button>
+   <button type="button" id ="circle">Circles</button>
+   
+
+
+   <br><br>
+
+   <label for="v1">Coloring Book Pages</label>
+   <br>
+   <button type="button" id="showStitch">Show Stitch</button>
+   <button type="button" id="showLilo">Show Lilo</button>
+
+   <br>
+   <label for="v1">Custom Drawing Reveal! It is supposed to be a rose. </label>
+   <br>
+   <button type="button" id="showFlower">Show/Hide Flower</button>
+
+   <p>Shape Color</p>
+   <label for="red">Red</label>
+   <input type="range" id="red" name="red" min="0" max="10" class = "slider">
+   <label for="green">Green</label>
+   <input type="range" id="green" name="green" min="0" max="10" class = "slider">
+   <label for="blue">Blue</label>
+   <input type="range" id="blue" name="blue" min="0" max="10" class = "slider">
+   <br><br>
+   <label for="size">Shape Size: </label>
+   <input type="range" id="size" name="size" min="1" max="10" class = "slider">
+   <label for="sCount">(Circle) Segment Count: </label>
+   <input type="range" id="sCount" name="sCount" min="1.5" max="12" value="12" class = "slider">
+   <br><br>
+   <p>My game is a coloring book! Click the buttons to find any pages you want to color in! You can reduce the size of the shapes to fill in the little crevices. </p>
+   <br>
+   <p>Reference image for drawing:</p>
+   <img src="flower.jpeg" alt="Description of Image" width="500" height="600">
+
+
+   <script src="lib/webgl-utils.js"></script>
+   <script src="lib/webgl-debug.js"></script>
+   <script src="lib/cuon-utils.js"></script>
+   <script src="lib/cuon-matrix-cse160.js"></script>
+
+   <script type=text/javascript src="Triangle.js"></script>
+   <script type=text/javascript src="Point.js"></script>
+   <script type=text/javascript src="Circle.js"></script>
+   <script type=text/javascript src="asg1.js"></script>
+
+</body>
+</html>
